@@ -1,0 +1,8 @@
+.about__body {
+  max-width: 750px;
+  margin-top: 30px;
+  display: grid;
+  gap: 18px;
+  color: var(--text-muted);
+  font-size: 18px;
+}

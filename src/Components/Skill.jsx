@@ -1,11 +1,26 @@
-import React from 'react'
+import { skills } from '../data/skills'
+import '../Styles/Skill.css'
 
-const skill = () => {
+const Skill = () => {
   return (
-    <div>
-      <h1>Skill</h1>
-    </div>
+    <section id="habilidades" className="section">
+      <div className="section__inner">
+        <h2 className="section__title">Habilidades</h2>
+        <div className="skills">
+          {skills.map(({ group, items }) => (
+            <div className="skills__group" key={group}>
+              <h3>{group}</h3>
+              <ul>
+                {items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 
-export default skill
+export default Skill

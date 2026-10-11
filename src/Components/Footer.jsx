@@ -1,10 +1,10 @@
-import React from 'react'
+import '../Styles/Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      <h1>footer</h1>
-    </div>
+    <footer className="footer">
+      <p>© {new Date().getFullYear()} Luis · Hecho con React y Vite</p>
+    </footer>
   )
 }
 

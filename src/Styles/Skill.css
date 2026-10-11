@@ -1,0 +1,31 @@
+.skills {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.skills__group {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.skills__group h3 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.skills__group ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills__group li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}

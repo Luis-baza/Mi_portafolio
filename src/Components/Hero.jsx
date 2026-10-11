@@ -1,23 +1,29 @@
-import React from "react";
-import "../Styles/Hero.css";
+import '../Styles/Hero.css'
+
 const Hero = () => {
   return (
-    <div className="container">
+    <section id="inicio" className="hero">
       <div className="hero-container">
-        <h1>HOLA, SOY LUIS</h1>
-        <h2>Desarrollador Full Stack </h2>
+        <p className="hero-eyebrow">Hola, soy</p>
+        <h1>LUIS</h1>
+        <h2>Desarrollador Full Stack</h2>
         <div className="descripcion">
           <p>
             Construyo aplicaciones web modernas utilizando React, Java y
             Spring Boot.
           </p>
-
-          <a href="#proyecto">VER PROYECTOS</a> 
-          <a href="#contactar">CONTACTAR</a>
+          <div className="hero-actions">
+            <a className="btn btn--primary" href="#proyectos">
+              VER PROYECTOS
+            </a>
+            <a className="btn btn--outline" href="#contacto">
+              CONTACTAR
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Hero;
+export default Hero

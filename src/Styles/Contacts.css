@@ -1,0 +1,26 @@
+.contacts__list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.contacts__list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.contacts__list span {
+  min-width: 90px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contacts__list a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.contacts__list a:hover { border-bottom-color: var(--primary); }
