@@ -1,10 +1,11 @@
 import '../Styles/Contacts.css'
 
-// ✏️ Cambia estos enlaces por los tuyos.
+const GMAIL_COMPOSE =
+  'https://mail.google.com/mail/?view=cm&fs=1&to=ludabazu@gmail.com'
+
 const contacts = [
-  { label: 'Correo', value: 'ludabazugmail.com', href: 'ludabazu@gmail.com' },
+  { label: 'Correo', value: 'ludabazu@gmail.com', href: GMAIL_COMPOSE },
   { label: 'GitHub', value: 'github.com/Luis-baza', href: 'https://github.com/Luis-baza' },
-  { label: 'LinkedIn', value: 'linkedin.com/in/tu-usuario', href: 'https://linkedin.com/in/tu-usuario' },
 ]
 
 const Contacts = () => {
@@ -27,7 +28,12 @@ const Contacts = () => {
           ))}
         </ul>
 
-        <a className="btn btn--primary" href="ludabazu@gmail.com">
+        <a
+          className="btn btn--primary"
+          href={GMAIL_COMPOSE}
+          target="_blank"
+          rel="noreferrer"
+        >
           ENVIAR CORREO
         </a>
       </div>
