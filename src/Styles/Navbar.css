@@ -2,8 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--bg-alt);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  background: rgba(10, 14, 23, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -73,7 +76,10 @@
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: var(--bg-alt);
+    background: rgba(13, 18, 30, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--card-border);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;

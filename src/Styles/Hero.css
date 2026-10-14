@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg) 100%);
+  background: radial-gradient(circle at 50% 30%, rgba(56, 189, 248, 0.1) 0%, transparent 65%);
 }
 
 .hero-container {
@@ -32,6 +32,27 @@
   margin-bottom: 25px;
   font-weight: 500;
   color: var(--primary);
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--primary);
+  animation: blink 0.9s infinite;
+  font-weight: 300;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .descripcion { max-width: 650px; }
@@ -49,8 +70,32 @@
   gap: 15px;
 }
 
+.btn--cv {
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn--cv:hover {
+  background: var(--primary);
+  color: var(--on-primary);
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.35);
+}
+
+.btn-icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn--cv:hover .btn-icon {
+  transform: translateY(2px);
+}
+
 @media (max-width: 768px) {
   .hero-container h1 { font-size: 48px; }
-  .hero-container h2 { font-size: 24px; }
+  .hero-container h2 {
+    font-size: 24px;
+    min-height: 32px;
+  }
   .descripcion p { font-size: 16px; }
 }

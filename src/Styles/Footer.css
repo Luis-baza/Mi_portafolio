@@ -2,6 +2,7 @@
   padding: 26px 20px;
   text-align: center;
   color: var(--text-muted);
-  background: #082d30;
+  background: rgba(8, 12, 19, 0.95);
+  border-top: 1px solid var(--card-border);
   font-size: 14px;
 }
